@@ -1,2 +1,4 @@
 class Portfolio < ApplicationRecord
-end
+  validates_presence_of :title, :body
+end 
+

@@ -1,4 +1,4 @@
-
+<img src="<%= @portfolio_item.main_image %>">
 
 <h1><%= @portfolio_item.title %></h1>
 
@@ -6,6 +6,10 @@
 
 <p><%= @portfolio_item.body %></p>
 
-<img src="<%= @portfolio_item.main_image %>">
+<h2>Technologies Used:</h2>
+
+<%= @portfolio_item.technologies.each do |t| %>
+<p><%=t.name%></p>
+<% end %>
 
 <%= link_to "Back", portfolios_path %>

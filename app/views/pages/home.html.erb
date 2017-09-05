@@ -1,8 +1,9 @@
-<h1>Homepage</h1>
-<p>Actually what this mean</p>
+<h1>Hello, <%= current_user.first_name if current_user %></h1>
+<h2>This is you`re homepage</h2>
 
 <h2>Blogs</h2>
-<%= @posts.inspect %>
+<%= @posts %>
 
 <h2>Skills</h2>
-<%= @skills.inspect %>
+<p><%= @skills  %></p>
+
